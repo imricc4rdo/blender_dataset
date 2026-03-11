@@ -10,12 +10,15 @@ A Blender-based pipeline for generating synthetic 3D scene datasets with multipl
 - **Augmented Features**: Random background images as room materials for floors and walls
 - **Automated rendering**: Generates RGB images, depth maps, and object masks
 
+
 ## Requirements
 
-- **Blender** 4.5.4
-- Python packages (see `requirements.txt`)
+### Blender
+- **Blender 4.5.4**
 
-### Python Dependencies
+### Python (Blender Embedded Interpreter)
+
+The following packages must be installed in Blender’s bundled Python environment (see `requirements.txt`).
 
 ```
 pillow
