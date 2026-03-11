@@ -1,0 +1,13 @@
+# Core image processing
+pillow
+matplotlib
+opencv-python
+
+# Dataset handling
+objaverse
+
+# Scientific computing
+scipy
+
+# 3D file handling
+pygltflib
