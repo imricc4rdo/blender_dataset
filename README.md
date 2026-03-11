@@ -31,7 +31,7 @@ pygltflib
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/imricc4rdo/dataset.git
+git clone https://github.com/imricc4rdo/blender_dataset.git
 cd dataset
 ```
 
