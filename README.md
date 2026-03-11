@@ -101,18 +101,17 @@ blender --background --python create_dataset.py -- \
 
 ```
 .
-├── render_examples/            # Folder with some render examples 
-├── utils/                      # Utility modules
+├── benchmarking/                   # Benchmarking folder 
+├── utils/                          # Utility modules
     ├── common_utils.py
     ├── mapping_utils.py
     ├── objaverse_utils.py
     ├── room_utils.py
     └── validation_utils.py
-├── blender_env_setup.sh        # Blender Python environment setup
-├── create_dataset.py           # Main dataset generation script
-├── mapping_example.ipynb       # Example mapping notebook
-├── requirements.txt            # Python dependencies
-└── viz_images.ipynb            # Visualization notebook 
+├── blender_env_setup.sh            # Blender Python environment setup
+    ├── create_dataset.py           # Main dataset generation script
+├── dataset_visualization.ipynb     # Visualization notebook 
+└── requirements.txt                # Python dependencies
 ```
 
 ## Output Format
