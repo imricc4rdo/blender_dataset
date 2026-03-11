@@ -1,14 +1,15 @@
 # 3D Synthetic Dataset Generator
 
-A Blender-based pipeline for generating synthetic 3D scene datasets with multiple views. This tool creates dynamic indoor scenes by placing 3D objects from Objaverse in rooms with random background iamges, lighting, and camera positions.
+A Blender-based pipeline for generating a synthetic **multi-view dynamic scenes dataset**. The framework is designed to enable explicit control over scene composition, object transformations, camera configuration, and illumination conditions.
 
 ## Features
 
-- **Multi-view scene generation**: Generate multiple camera views of the same scene
+- **Multi-view scene generation**: Generate multiple views of the same scene
 - **Objaverse integration**: Automatic downloading and filtering of 3D objects from Objaverse dataset
 - **Smart object selection**: Filters objects based on file size, vertex count, texture quality, and visual properties
 - **Augmented Features**: Random background images as room materials for floors and walls
 - **Automated rendering**: Generates RGB images, depth maps, and object masks
+- **Rich annotations**: Exact knowledge of camera poses, object transformations, and pixel-level correspondences.
 
 
 ## Requirements

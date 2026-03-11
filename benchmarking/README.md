@@ -22,29 +22,23 @@ Refer to the Glue Factory README for additional dependency details.
 
 ## 2. Integrating the Blender Dataset into Glue Factory
 
-Copy the extension files into the Glue Factory source tree, preserving the
-directory structure:
+Copy the extension files into the Glue Factory source tree `external/glue-factory/gluefactory/`, 
+preserving the outlined directory structure:
 
 ```
 benchmarking/gluefactory_extension/gluefactory/
-├── configs/
+├── configs/                                    # Config files
 │   ├── superpoint+superglue_eval.yaml
+│   ├── loftr_eval.yaml
 │   ├── superpoint+lightglue_eval.yaml
-│   ├── superpoint+lsd+gluestick_eval.yaml
-│   └── loftr_eval.yaml
+│   └── superpoint+lsd+gluestick_eval.yaml
 ├── datasets/
-│   └── blender.py                          # Dataset loader
+│   └── blender.py                              # Dataset loader
 ├── eval/
-│   └── blender.py                          # Evaluation pipeline
+│   └── blender.py                              # Evaluation pipeline
 └── models/
     └── matchers/
-        └── blender_dataset_matcher.py      # Per-object ground-truth matcher
-```
-
-Copy into:
-
-```
-external/glue-factory/gluefactory/
+        └── blender_dataset_matcher.py          # Per-object ground-truth matcher
 ```
 
 No modifications to the core Glue Factory code are required.
@@ -58,11 +52,13 @@ Glue Factory resolves paths relative to its own root directory via
 
 | Purpose              | Default path                                |
 |----------------------|---------------------------------------------|
-| Dataset              | `external/glue-factory/data/blender_dataset` |
-| Evaluation results   | `external/glue-factory/outputs/results/`     |
+| Dataset              | `external/glue-factory/gluefactory/data/` |
+| Evaluation results   | `external/glue-factory/gluefactory/outputs/results/`     |
 
-Place (or symlink) the Blender dataset folder so that it is accessible at
+Place the Blender dataset folder so that it is accessible at
 `data/blender_dataset` inside the Glue Factory root.
+
+Evaluation results on the dataset will be stored at `external/glue-factory/gluefactory/outputs/results/blender`. 
 
 ---
 
@@ -84,7 +80,7 @@ Refer to the Glue Factory documentation for model-specific options.
 ## 5. Precomputed Results and Dataset
 
 Both the Blender dataset and the precomputed evaluation results used in this
-thesis are available on Hugging Face:
+thesis are available on **Hugging Face**:
 
 👉 [imricc4rdo/benchmarking_data](https://huggingface.co/datasets/imricc4rdo/benchmarking_data/tree/main)
 
