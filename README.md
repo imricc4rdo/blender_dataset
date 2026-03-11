@@ -79,8 +79,8 @@ blender --background --python create_dataset.py -- \
 | `--n_scenes` | 500 | Number of scenes to generate |
 | `--n_views` | 3 | Number of views per scene |
 | `--max_view_attempts` | 5 | Maximum number of attempts for a view |
-| `--min_objects` | 2 | Minimum objects per view |
-| `--max_objects` | 4 | Maximum objects per view |
+| `--min_objects` | 3 | Minimum objects per view |
+| `--max_objects` | 5 | Maximum objects per view |
 | `--common_objects` | 2 | Objects shared across all views |
 | `--area` | 2000.0 | Placement area (X × Y) |
 | `--walls_height` | 25.0 | Height of room walls |
