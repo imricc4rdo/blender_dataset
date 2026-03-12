@@ -106,6 +106,7 @@ blender --background --python create_dataset.py -- \
 ```
 .
 ├── benchmarking/                   # Benchmarking folder 
+├── dataset_preview/                # Example scenes extracted from the generated dataset
 ├── utils/                          # Utility modules
     ├── common_utils.py
     ├── mapping_utils.py
@@ -113,7 +114,7 @@ blender --background --python create_dataset.py -- \
     ├── room_utils.py
     └── validation_utils.py
 ├── blender_env_setup.sh            # Blender Python environment setup
-    ├── create_dataset.py           # Main dataset generation script
+├── create_dataset.py               # Main dataset generation script
 ├── dataset_visualization.ipynb     # Visualization notebook 
 └── requirements.txt                # Python dependencies
 ```
